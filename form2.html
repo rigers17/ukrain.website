@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form2.css">
+    <link rel="stylesheet" href="drag.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+</head>
+<body>
+  <section class="header">
+
+    <a href="logo"  class="logo"><img src="images/logo3.png" alt="logo"> </a>
+    
+    <nav class="navbar">
+       <a href="webi.detyre.html #home">Faqja Kryesore</a>
+       <a href="webi.detyre.html #news">Lajme</a>
+       <a href="webi.detyre.html #gallery">Galeria</a>
+       <a href="webi.detyre.html #article">Artikuj & Editoriale</a>
+       <a href="webi.detyre.html #donate">Kontribuoni</a>
+    </nav>
+    <div id="menu-btn"></div>
+    </section>
+<div class="wrapper">
+    <div class="title">
+      Regjistrohuni
+    </div>
+    <form id="form1" action class="form" onclick="validateForm()">
+       <div class="form-control">
+          <label>Emri</label>
+          <input type="text" placeholder="Emri" id="emri" onkeyup="lettersonly(this)" required>
+          <i class="fa fa-check-circle" aria-hidden="true"></i>
+                <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                <small>Gabim. Vendosni inputet e sakta.</small>
+       </div>  
+        <div class="form-control">
+          <label>Mbiemri</label>
+          <input type="text" placeholder="Mbiemri" id="surname" onkeyup="lettersonly(this)" required>
+          <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Gabim. Vendosni inputet e sakta.</small>
+       </div>  
+       <div class="form-control">
+        <label>Emri i perdoruesit</label>
+        <input type="text" placeholder="Emri i perdoruesit" id="username"required>
+        <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Gabim. Vendosni inputet e sakta.</small>
+        
+     </div>  
+       <div class="form-control">
+          <label>Fjalekalimi</label>
+          <input type="password" placeholder="Fjalekalimi" id="password" minlength="8" required>
+          <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Gabim. Vendosni inputet e sakta.</small>
+       </div>  
+      <div class="form-control">
+          <label>Konfirmo Fjalekalimin</label>
+          <input type="password" placeholder="Fjalekalimi" id="password2" required>
+          <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Gabim. Vendosni inputet e sakta.</small>
+       </div> 
+       <div class="form-control1" id="gender" >
+        <label>Gjinia</label>
+        <input type="checkbox" name="gender"  value="Mashkull">
+        <label for="Mashkull"> Mashkull </label>
+            <span class="checkmark"></span>
+            <input type="checkbox" name="gender" value="Femer">
+            <label for="Femer">Femer</label>
+            <span class="checkmark"></span>
+       </div> 
+       <div class="form-control">
+       <label for="birthday">Datelindje</label>
+       <input type="date" id="birthday" name="birthday" required >
+       </div>
+        <div class="form-control">
+          <label>Vendi ku jetoni</label>
+          <div class="custom_select">
+            <select required>
+                <option></option>
+                <option value="Albania">Albania</option>
+                <option value="Algeria">Algeria</option>
+                <option value="Andorra">Andorra</option>
+                <option value="Angola">Angola</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Australia">Australia</option>
+                <option value="Austria">Austria</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Bulgaria">Bulgaria</option>
+                <option value="Canada">Canada</option>
+                <option value="China">China</option>
+                <option value="Croatia">Croatia</option>
+                <option value="Czech Republic">Czech Republic</option>
+                <option value="Denmark">Denmark</option>
+                <option value="France">France</option>
+                <option value="Germany">Germany</option>
+                <option value="Greece">Greece</option>
+                <option value="Italy">Italy</option>
+                <option value="Japan">Japan</option>
+                <option value="Montenegro">Montenegro</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="Norway">Norway</option>
+                <option value="Poland">Poland</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Spain">Spain</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="United Arab Emirates">United Arab Emirates</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States">United States</option>
+                <option value="Venezuela">Venezuela</option>
+            </select>
+       </div> 
+        </div>
+        <div class="form-control">
+          <label>Email</label>
+          <input type="email" placeholder="Email" id="email"required>
+          <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Gabim. Vendosni inputet e sakta.</small>
+       </div> 
+      <div class="form-control">
+          <label>Numri Telefonit</label>
+          <input type="tel" placeholder="Numri Telefonit ne formatin(xxx-xxx-xxxx)" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"required>
+          <i class="fa fa-check-circle"></i>
+                <i class="fa fa-exclamation-circle"></i>
+                <small>Gabim. Vendosni inputet e sakta.</small>
+       </div> 
+    
+          <button onclick="check()"><a href="flm.html"> SUBMIT</a></button>
+          <button onsubmit="clear(input)">Pastro te dhenat!</button>
+        </div>
+      </div>
+    </form>
+</div>
+</body>
+</html>
+<script src="form2.js"></script>

@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.drager {
+    
+    border: 2px dashed #757575;
+    height: 200px;
+    width: 150px;
+    border-radius: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.drager .icon {
+    font-size: 40px;
+    color: #757575;
+}
+.drager header {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #757575;
+}
+.drager span {
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 7px 0px 15px 0;
+    color: #757575;
+}
+.drager button {
+    padding: 12px 20px;
+    font-size: 20px;
+    background: #757575;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+
+.drager.active {
+    border: 2px dashed green;
+}
+.drager .icon i.img,
+.drager header.img,
+.drager span.img {
+    color: green;
+}
+.drager button.background {
+    background-color: green;
+}
+.drager img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1px;
+}
